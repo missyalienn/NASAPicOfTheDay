@@ -59,7 +59,6 @@ class PlanetTableViewController: UITableViewController {
             let neptune = Planet(name: "Neptune", numberOfMoons: 13, numberOfDays: 60148.35, facts: ["Neptune is the third largest planet in the solar system.",
                                                                                                      "The discovery of Neptune was one of the most exciting discoveries in Astronomy.",
                                                                                                      "Neptune is one of the four gas giants and is composed only of gas."])
-            
 
             planets.append(mercury)
             planets.append(venus)
@@ -72,12 +71,26 @@ class PlanetTableViewController: UITableViewController {
             
             
         }
+    }
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
         
-        
-
-        
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return planets.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? FactTableViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            dest.planet = planets[indexPath.row]
+            
+        }
+    }
        
-}
+    }
+    
 
-}
