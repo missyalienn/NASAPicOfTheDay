@@ -137,9 +137,57 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="148"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M1N-ZH-LBJ" id="9Eu-xB-V8C">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="RAX-vJ-YZr">
+                                            <rect key="frame" x="28" y="19" width="143" height="129"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQC-MN-2RN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="87" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                    <color key="textColor" red="1" green="0.01469268153" blue="0.8734402993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgs-0E-lfi">
+                                                    <rect key="frame" x="0.0" y="43" width="42" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-Sa-xzE">
+                                                    <rect key="frame" x="0.0" y="86" width="42" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="KQC-MN-2RN" secondAttribute="trailing" constant="56" id="R6Z-vd-E72"/>
+                                            </constraints>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg1-t1-CT4">
+                                            <rect key="frame" x="16" y="42.5" width="343" height="62.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xg1-t1-CT4" firstAttribute="centerX" secondItem="9Eu-xB-V8C" secondAttribute="centerX" id="NYM-BX-tfx"/>
+                                        <constraint firstItem="xg1-t1-CT4" firstAttribute="centerY" secondItem="9Eu-xB-V8C" secondAttribute="centerY" id="ROd-VQ-U5i"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xg1-t1-CT4" secondAttribute="bottom" constant="35" id="VJk-Cl-JhZ"/>
+                                        <constraint firstItem="RAX-vJ-YZr" firstAttribute="leading" secondItem="9Eu-xB-V8C" secondAttribute="leadingMargin" constant="20" id="cfd-L5-Ec2"/>
+                                        <constraint firstItem="RAX-vJ-YZr" firstAttribute="top" secondItem="9Eu-xB-V8C" secondAttribute="topMargin" constant="11" id="sc5-Pm-brh"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xg1-t1-CT4" secondAttribute="trailing" constant="8" id="tGD-av-pif"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="factsLabel" destination="xg1-t1-CT4" id="5Fa-JQ-pCx"/>
+                                    <outlet property="numOfDaysLabel" destination="BFz-Sa-xzE" id="y1H-ts-QqH"/>
+                                    <outlet property="numOfMoonsLabel" destination="qgs-0E-lfi" id="Li1-YP-Ojb"/>
+                                    <outlet property="planetNameLabel" destination="KQC-MN-2RN" id="Tjm-DW-Mp2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -150,7 +198,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgl-kN-3dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="143"/>
+            <point key="canvasLocation" x="460" y="142.57871064467767"/>
         </scene>
     </scenes>
 </document>
