@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NASA_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✨ NASA Pic Of The Day ✨ " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUp-TF-LEP">
+                                <rect key="frame" x="35" y="20" width="300" height="72"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1YJ-6k-owA">
+                                <rect key="frame" x="25" y="178" width="324" height="199"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPe-1N-MqX">
+                                <rect key="frame" x="49" y="77" width="271" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ao3-oF-kdJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61f-g6-Waf">
+                                <rect key="frame" x="16" y="113" width="343" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="dot-zS-63I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-5x-JQh">
+                                <rect key="frame" x="23" y="385" width="324" height="173"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="dnD-PS-XXx"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="source: api.nasa.gov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHR-Lr-h83">
+                                <rect key="frame" x="129" y="638" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="P6g-r2-ANx"/>
+                                    <constraint firstAttribute="width" constant="135" id="p2I-qG-v6L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3o-ue-SU2">
+                                <rect key="frame" x="23" y="569" width="324" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="fwg-TZ-vE7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="🌌✨learn more about space ✨🌌">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nh0-TU-cRr" kind="show" id="5fx-s6-Qg5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YUp-TF-LEP" firstAttribute="centerX" secondItem="c3o-ue-SU2" secondAttribute="centerX" id="2eZ-Yv-3GS"/>
+                            <constraint firstItem="61f-g6-Waf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="34m-dk-mDf"/>
+                            <constraint firstItem="Fl5-5x-JQh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="5F2-cY-BbN"/>
+                            <constraint firstItem="61f-g6-Waf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6CA-5x-AdM"/>
+                            <constraint firstItem="YUp-TF-LEP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="90L-tc-k4Z"/>
+                            <constraint firstItem="Fl5-5x-JQh" firstAttribute="top" secondItem="1YJ-6k-owA" secondAttribute="bottom" constant="8" symbolic="YES" id="9GJ-JE-AZT"/>
+                            <constraint firstItem="ZHR-Lr-h83" firstAttribute="top" secondItem="c3o-ue-SU2" secondAttribute="bottom" constant="8" symbolic="YES" id="AGD-cN-5oE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZHR-Lr-h83" secondAttribute="bottom" constant="8" symbolic="YES" id="AYt-KX-E3H"/>
+                            <constraint firstItem="Fl5-5x-JQh" firstAttribute="leading" secondItem="c3o-ue-SU2" secondAttribute="leading" id="FEX-4Q-gfq"/>
+                            <constraint firstItem="Fl5-5x-JQh" firstAttribute="centerX" secondItem="c3o-ue-SU2" secondAttribute="centerX" id="Qjl-Cd-S7o"/>
+                            <constraint firstItem="1YJ-6k-owA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="TGg-gK-b4y"/>
+                            <constraint firstItem="c3o-ue-SU2" firstAttribute="top" secondItem="Fl5-5x-JQh" secondAttribute="bottom" constant="11" id="UE0-YB-ffv"/>
+                            <constraint firstItem="YPe-1N-MqX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="asI-ve-2Cw"/>
+                            <constraint firstItem="YPe-1N-MqX" firstAttribute="centerX" secondItem="Fl5-5x-JQh" secondAttribute="centerX" id="bup-j8-L6F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fl5-5x-JQh" secondAttribute="trailing" constant="12" id="eY8-2a-mjE"/>
+                            <constraint firstItem="1YJ-6k-owA" firstAttribute="top" secondItem="YPe-1N-MqX" secondAttribute="bottom" constant="51" id="gEH-ut-Rwa"/>
+                            <constraint firstItem="1YJ-6k-owA" firstAttribute="top" secondItem="61f-g6-Waf" secondAttribute="bottom" constant="8" symbolic="YES" id="gM2-KF-alt"/>
+                            <constraint firstItem="61f-g6-Waf" firstAttribute="top" secondItem="YUp-TF-LEP" secondAttribute="bottom" constant="21" id="hHu-XR-lE9"/>
+                            <constraint firstItem="61f-g6-Waf" firstAttribute="centerX" secondItem="1YJ-6k-owA" secondAttribute="centerX" id="kbb-ak-63X"/>
+                            <constraint firstItem="YUp-TF-LEP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="oID-jl-mdu"/>
+                            <constraint firstItem="YPe-1N-MqX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="sop-k8-zIw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZHR-Lr-h83" secondAttribute="trailing" constant="95" id="z05-EM-Rx1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="YPe-1N-MqX" id="QyG-Pr-1c6"/>
+                        <outlet property="imageExplanation" destination="Fl5-5x-JQh" id="Z8M-7m-c9t"/>
+                        <outlet property="imageTitle" destination="61f-g6-Waf" id="BVb-IZ-xo5"/>
+                        <outlet property="picOfTheDay" destination="1YJ-6k-owA" id="j7u-mk-ryQ"/>
+                        <outlet property="sourceLabel" destination="ZHR-Lr-h83" id="yd8-Jd-JkZ"/>
+                        <outlet property="staticTitle" destination="YUp-TF-LEP" id="01g-cO-YqF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="142.57871064467767"/>
+        </scene>
+        <!--Planet Table View Controller-->
+        <scene sceneID="i0u-ql-kFf">
+            <objects>
+                <tableViewController id="Nh0-TU-cRr" customClass="PlanetTableViewController" customModule="NASA_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wfq-Ct-oK0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetCell" rowHeight="148" id="M1N-ZH-LBJ" customClass="PlanetTableViewCell" customModule="NASA_API" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="148"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M1N-ZH-LBJ" id="9Eu-xB-V8C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Nh0-TU-cRr" id="jy5-yG-tBh"/>
+                            <outlet property="delegate" destination="Nh0-TU-cRr" id="UsI-bH-4F9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgl-kN-3dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="143"/>
+        </scene>
+    </scenes>
+</document>
